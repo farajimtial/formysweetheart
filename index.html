@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overstimulation Soother</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #4CAF50;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #suggestion {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #e7f9e7;
+      border: 1px solid #c8e6c9;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Short messages for my sweetheart Tasnim </h1>
+  <p>Feeling different emotions? Choose an option below to feel better:</p>
+  
+  <button onclick="suggest('I just want you to know how proud I am of you. Every single day, you amaze me with your strength, your kindness, and the way you handle everything life throws at you.Even when things feel tough, you keep going, and that takes so much courage. Watching you grow, face challenges, and shine in your own unique way fills my heart with so much pride.')">Stressing about present?</button>
+  <button onclick="suggest('I know you’re feeling anxious right now, and I just want to remind you that it’s okay to feel this way. It doesn’t make you weak or less capable—it’s just a moment, and moments pass.Take a deep breath with me, in and out. Let’s slow things down together. Whatever is on your mind, we can handle it one step at a time. You’re not alone in this—I’m right here beside you.You’re stronger than your anxiety, even if it doesn’t feel like it right now.My shona bachha, my adure bachha. Trust yourself, and if you need me, I’ll hold your hand through it all. I love you so much. ')">Feeling anxious</button>
+  <button onclick="suggest('I can see that something is on your mind, and I want you to know that it’s okay to feel worried sometimes. Whatever it is, you don’t have to carry it alone—I’m here for you. Faraj ase na?Talk to me about it if you feel like sharing. And if you don’t, that’s okay too. Just know that I’ll always support you and do my best to help lighten your worries.You’re strong, even on days when you don’t feel like it. And together, we’ll figure things out—step by step. I believe in you, always')">Feeling worried?</button>
+  <button onclick="suggest('
+I need you to know something very important .Your presence in my life is a gift, and whatever you're feeling or going through, I want to be here for you—completely.We’re a team, and I want to support you the way you support me, even when you don’t realize it. Your love, your care, your laughter, and just you mean so much to me.Please don’t ever feel like you’re too much for me.I chose you, and I choose you every single day because I care about you deeply. If you’re struggling, let’s face it together. Lean on me—I’m here, always.You’re my world, and I wouldn’t trade having you in my life for anything.ANYTHING')">Feeling heavy?</button>
+  <button onclick="suggest('I know things feel overwhelming right now, and that’s okay. You don’t need to force yourself to handle everything all at once. It’s perfectly fine to take a break and let things settle.I’m here to help in whatever way feels right for you. Whether you need quiet, a hug, or just someone to sit with, I’ve got you. You’re not alone in this—I’m by your side, always.Take your time, breathe, and know that you’re deeply loved, just as ')">Overstimulating?</button>
+  
+  <div id="suggestion"></div>
+  
+  <script>
+    function suggest(message) {
+      document.getElementById('suggestion').innerHTML = `Dear Tasnim ${message}`;
+    }
+  </script>
+</body>
+</html>
